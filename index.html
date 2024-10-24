@@ -3,22 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/svg+xml" href="./images/logo.svg#logo-header-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Green Harvest</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
+    <title>GreenHarvest</title>
 </head>
 <body>
-    <section class="hero-section">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">organic vegetables to your diet today!</h1>
-                <p class="hero-text">Our expertly curated vegetable baskets are made with the freshest, highest quality vegetables available. Fresh Harvest Box has got you covered. Fresh, high-quality vegetables in expertly curated vegetable baskets delivered to you.</p>
-            </div>
-        </div>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="./index.html" class="header-logo">
+                    <svg class="logo-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#logo-icon"></use>
+                    </svg> 
     
-        <!-- <div class="hero-background-image">
-        </div>   -->
-    </section>
+                    <svg class="logo-name" width="146" height="12" aria-hidden="true">
+                        <use href="./images/sprite.svg#logo-name"></use>
+                    </svg>
+                </a>
+        
+                <button class="menu-button">
+                    <svg class="menu-icon" width="32" height="32">
+                        <use href="./images/sprite.svg#burger-btn"></use>
+                    </svg>
+                </button>    
+            </div>
+            
+            <div class="mobile-menu">
+                <div class="mobile-menu-container">
+                    <button class="menu-close-button">
+                        <svg class="close-icon" width="32" height="32">
+                            <use href="./images/sprite.svg#close-btn"></use>
+                        </svg>
+                    </button>
+                    
+                    <nav class="header-navigation">
+                        <ul class="header-navigation-list">
+                            <li class="nav-list-item">
+                                <a href="" class="anchor-link">How It Works</a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a href="" class="anchor-link">Vegetables</a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a href="" class="anchor-link">Reviews</a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a href="" class="anchor-link-shop">Shop now</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
 </body>
 </html>
