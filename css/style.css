@@ -97,6 +97,8 @@ body {
 /*============== /CONTAINER+BASE ==============*/
 
 /*============== HEADER ==============*/
+
+
 /* Mobile & Tablet */
 .header-container{
     display: flex;
@@ -148,12 +150,6 @@ body {
 
 /* Desktop */
 @media screen and (min-width: 1280px){
-    /* .logo-icon:hover, .logo-icon:focus{
-        transform: scale(1.2);
-        fill: #7A3145;
-        stroke: #7A3145;
-    } */
-
     .header-logo:hover .logo-icon{
         transform: scale(1.2);
         fill: #622133;
@@ -220,6 +216,8 @@ body {
         background-color: #622133;
     }
 }
+
+/*============== /HEADER ==============*/
 
 /*============== MODAL MENU ==============*/
 
@@ -370,4 +368,101 @@ body {
     flex-direction: column; 
     padding-bottom: 40px; 
 }
+}
+
+/*============== /MODAL MENU ==============*/
+
+/*============== HERO ==============*/
+
+/* Mobile */
+.hero-section {
+    width:  100%;
+    background: url(../images/bg-mobile.jpg);
+    background-size: 375px 370px; 
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-top: 100px;
+    padding-bottom: 410px;
+}
+
+@media screen and (min-resolution:192dpi){
+    .hero-section { 
+        background-image: url(../images/bg-mobile@2x.jpg);
+    }
+}
+    
+.hero-title {
+    width: 335px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.hero-text {
+    width: 335px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    color: #fbfbfb;
+}
+
+/* Tablet */
+
+@media screen and (min-width:768px){
+    .hero-section {
+        width:  100%;
+        background: url(../images/bg-tablet.jpg);
+        background-size: 768px 539px; 
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        padding-top: 122px;
+        padding-bottom: 589px;
+    }
+
+    .hero-title {
+        width: 704px;
+        font-size: 76px;
+        margin-bottom: 25px;
+    }
+    .hero-text {
+        width: 603px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+
+@media screen and (min-resolution:192dpi) and (min-width:768px){
+    .hero-section { 
+        background-image: url(../images/bg-tablet@2x.jpg);
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1280px){
+
+    
+    .hero-section{
+        background-image: url(../images/bg-desktop.jpg);
+        background-size: 650px 800px;
+        background-position: right;
+        max-width: 1280px;
+        
+        padding-top: 238px;
+        padding-bottom: 50px;
+        margin: 0 auto;
+    }
+
+    .hero-title{
+        margin-bottom: 128px;
+        max-width: 502px;
+    }
+
+    .hero-text{
+        max-width: 472px;
+    } 
+
 }
