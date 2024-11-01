@@ -19,57 +19,70 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header-content">
-                <a href="./index.html" class="header-logo">
-                    <svg class="logo-icon" width="16" height="16">
-                        <use href="./images/sprite.svg#logo-icon"></use>
-                    </svg> 
-    
-                    <svg class="logo-name" width="146" height="12" aria-hidden="true">
-                        <use href="./images/sprite.svg#logo-name"></use>
-                    </svg>
-                </a>
-        
-                <button class="menu-button">
-                    <svg class="menu-icon" width="32" height="32">
-                        <use href="./images/sprite.svg#burger-btn"></use>
-                    </svg>
-                </button>    
-            </div>
-            
-            <div class="mobile-menu">
-                <div class="mobile-menu-container">
-                    <button class="menu-close-button">
-                        <svg class="close-icon" width="32" height="32">
-                            <use href="./images/sprite.svg#close-btn"></use>
-                        </svg>
-                    </button>
-                    
-                    <nav class="header-navigation">
-                        <ul class="header-navigation-list">
-                            <li class="nav-list-item">
-                                <a href="" class="anchor-link">How It Works</a>
-                            </li>
-                            <li class="nav-list-item">
-                                <a href="" class="anchor-link">Vegetables</a>
-                            </li>
-                            <li class="nav-list-item">
-                                <a href="" class="anchor-link">Reviews</a>
-                            </li>
-                            <li class="nav-list-item">
-                                <a href="" class="anchor-link-shop">Shop now</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+        <div class="container header-container">
+            <a class="header-logo" href="">
+                <svg class="logo-icon" width="16" height="16">
+                    <use href="./images/sprite.svg#logo-icon"></use>
+                </svg>
 
+                <svg class="logo-name" width="148" height="12">
+                    <use href="./images/sprite.svg#logo-name"></use>
+                </svg>
+            </a>
+
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="list-item">
+                        <a class="header-link" href=""> How It Works </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="header-link"> Vegetables </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="header-link"> Reviews </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="" class="shop-btn" type="button">Shop now</a>
+
+            <button class="burger-btn" data-menu-open>
+                <svg class="burger-icon" width="32" height="32">
+                    <use href="./images/sprite.svg#burger-btn"></use>
+                </svg>
+            </button>
+
+        </div>
+
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container" >
+                <button class="modal-close-btn" data-menu-close>
+                    <svg class="modal-close-icon" width="32" height="32">
+                        <use href="./images/sprite.svg#close-btn"></use>
+                    </svg>
+                </button>
+    
+                <ul class="modal-nav-list">
+                    <li class="modal-list-item">
+                        <a href="" class="modal-list-link">How It Works</a>
+                    </li>
+                    <li class="modal-list-item">
+                        <a href="" class="modal-list-link">Vegetables</a>
+                    </li>
+                    <li class="modal-list-item">
+                        <a href="" class="modal-list-link">Reviews</a>
+                    </li>
+                </ul>
+
+                <a href="" class="modal-shop-btn" type="button">Shop now</a>
+            </div>
         </div>
     </header>
 
     <main></main>
 
     <footer></footer>
+
+<script src="./js/modal.js"></script>
 </body>
 </html>
