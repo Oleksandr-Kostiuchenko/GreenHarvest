@@ -18,8 +18,8 @@
     <title>GreenHarvest</title>
 </head>
 <body>
-    <!--
-    <header>
+
+    <header class="page-header">
         <div class="container header-container">
             <a class="header-logo" href="">
                 <svg class="logo-icon" width="16" height="16">
@@ -79,10 +79,9 @@
             </div>
         </div>
     </header>
-    -->
+
 
     <main>
-        
         <section class="hero-section">
             <div class="container">
                 <h1 class="hero-title">organic vegetables to your diet today!</h1>
@@ -90,6 +89,55 @@
             </div>
         </section>
         
+        <section class="how-section">
+            <div class="container how-container">
+                <h2 class="how-title visually-hidden">How it works</h2>
+
+                <div class="how-image-container">
+                    <picture>
+                        <source srcset="./images/how/how-img-desktop.png 1x , ./images/how/how-img-desktop@2x.png 2x" 
+                        media="(min-width:1280px)" 
+                        width="430" 
+                        height="559">
+                        <source srcset="./images/how/how-img-tablet.png 1x , ./images/how/how-img-tablet@2x.png 2x" 
+                        media="(min-width: 768px)" 
+                        width="640" 
+                        height="640">
+                        <source srcset="./images/how/how-img-mobile.png 1x , ./images/how/how-img-mobile@2x.png 2x" 
+                        media="(max-width: 767px)" 
+                        width="335" 
+                        height="450">
+
+
+                        <img class="how-image" src="./images/how/how-original.png" alt="Preparing vegetables">
+                    </picture>
+                </div>
+
+                <div class="how-content">
+                    <p class="how-description">To order your <span class="description-accent">vegetable</span> basket, simply follow these <span class="description-accent">easy steps</span>
+                    </p>
+                    <p class="how-text">Our baskets are assembled with care and delivered straight to your doorstep, so you can enjoy the taste of fresh fruit without ever leaving your home.</p>
+
+                    <ul class="how-list">
+                        <li class="how-list-item"> 
+                            <p class="list-text">
+                                Just choose <span class="list-accent">the vegetable</span> you want to order by clicking on the checkboxes <span class="list-accent">next to it</span>.
+                            </p>
+                        </li>
+                        <li class="how-list-item">
+                            <p class="list-text">
+                                Click on <span class="list-accent">the basket</span> and fill out the form.
+                            </p>
+                        </li>
+                        <li class="how-list-item">
+                            <p class="list-text">
+                                Sit back and relax! Your <span class="list-accent">fresh vegetables</span> basket will be delivered.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer></footer>
