@@ -474,6 +474,7 @@ body {
     }
 
     .hero-title{
+        margin: 0;
         margin-bottom: 128px;
         max-width: 502px;
     }
@@ -515,6 +516,14 @@ body {
     .how-image-container{
         padding: 100px 64px;
     }
+
+    .how-content{
+        width:450px;
+    }
+
+    .how-description{
+        width:450px;
+    }
 }
 
 /* Desktop img */
@@ -522,21 +531,30 @@ body {
     .how-container{
         flex-direction: row;
     }
+
+    .how-container {
+        padding: 0;
+        /* min-width: 320px; */
+        justify-content: flex-start;
+        align-items: center;
+    }
     
     .how-image-container{
         padding: 100px;
-        
     }
 
     .how-content{
-        width: 50%;
         margin-left: 100px;
     }
 }
 
 /* Mobile styles */
-.how-description{
+.how-content{
     padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.how-description{
     margin-bottom: 20px;
     
     width: 335px;
@@ -571,8 +589,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
 }
 
 .how-list-item::before{
@@ -606,3 +622,106 @@ body {
     color: #141414;
 }
 
+/* Tablet */
+@media screen and (min-width:768px){
+    .how-content{
+        width:450px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .how-list-item{
+        width:450px;
+    }
+
+    .how-description{
+        width:450px;
+        font-size: 32px;
+    }
+
+    .how-text{
+        width:450px;
+        font-size: 16px;
+    }
+
+    .list-text{
+        width: 325px;
+        font-size: 16px;
+    }
+}
+
+/*============== /HOW ==============*/
+
+/*============== ADVERTISMENT ==============*/
+
+/* Mobile */
+.advertisment-section {
+    background-color: #fbfbfb;
+}
+
+.advertisment-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.advertisment-text {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.04167;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+    width: 335px;
+}
+.advertisment-accent {
+    display: block;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 10px;
+    color: #fbfbfb;
+    border-radius: 12px;
+    height: 102px;
+    background: #576f35;
+}
+
+/* Tablet */
+@media screen and (min-width:768px){
+    .advertisment-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .advertisment-text {
+        font-size: 64px;
+        width: 704px;
+    }
+
+    .advertisment-accent{
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 8px;
+        height: 86px;
+    }
+}
+
+/* Laptop */
+@media screen and (min-width:1280px){
+    .advertisment-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .advertisment-text {
+        font-size: 76px;
+        width: 1070px;
+    }
+
+    .advertisment-accent{
+        display: inline;
+    }
+}
